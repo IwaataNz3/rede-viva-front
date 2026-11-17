@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+/* Cores e fontes da Rede Viva. Para trocar a identidade visual, mude só aqui. */
+@theme {
+  --color-verde: #1b7a43;
+  --color-verde-claro: #e3f1e7;
+  --color-verde-escuro: #0f3d2e;
+  --color-creme: #f7f3ea;
+  --color-areia: #efe8d8;
+  --color-tomate: #c93a26; /* cor da fome: preço e desconto */
+  --color-tomate-claro: #fbe3de;
+  --color-mostarda: #f2b33d; /* destaque, sempre com texto escuro */
+  --color-mostarda-claro: #fcefd2;
+  --color-erro: #8f1d3a; /* vinho, para não confundir erro com promoção */
+  --color-erro-claro: #fbeef1;
+  --color-tinta: #1a1f1c;
+  --color-cinza: #56605a;
+  --color-linha: #e2dac8;
+
+  --font-titulo: "Bricolage Grotesque", system-ui, sans-serif;
+  --font-texto: "Figtree", system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-creme font-texto text-tinta antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-titulo text-verde-escuro;
+  }
+
+  /* Anel de foco visível para quem navega pelo teclado */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-verde;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}
