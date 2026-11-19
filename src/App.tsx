@@ -8,6 +8,7 @@ import Faq from './pages/Faq'
 import Contato from './pages/Contato'
 import Vitrine from './pages/Vitrine'
 import Painel from './pages/Painel'
+import NaoEncontrada from './pages/NaoEncontrada'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/integrantes/:id" element={<IntegranteDetalhe />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contato" element={<Contato />} />
+        <Route path="*" element={<NaoEncontrada />} />
       </Route>
     </Routes>
   )
