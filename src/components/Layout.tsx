@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Header from './Header'
+import Footer from './Footer'
 
 function Layout() {
   const location = useLocation()
@@ -16,6 +17,7 @@ function Layout() {
       <main id="conteudo" className="flex-1">
         <Outlet />
       </main>
+      <Footer />
     </div>
   )
 }
