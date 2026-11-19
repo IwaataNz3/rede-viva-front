@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import Layout from './components/Layout'
 import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Integrantes from './pages/Integrantes'
@@ -11,14 +12,16 @@ import Painel from './pages/Painel'
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/sobre" element={<Sobre />} />
-      <Route path="/ofertas" element={<Vitrine />} />
-      <Route path="/painel" element={<Painel />} />
-      <Route path="/integrantes" element={<Integrantes />} />
-      <Route path="/integrantes/:id" element={<IntegranteDetalhe />} />
-      <Route path="/faq" element={<Faq />} />
-      <Route path="/contato" element={<Contato />} />
+      <Route element={<Layout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/ofertas" element={<Vitrine />} />
+        <Route path="/painel" element={<Painel />} />
+        <Route path="/integrantes" element={<Integrantes />} />
+        <Route path="/integrantes/:id" element={<IntegranteDetalhe />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/contato" element={<Contato />} />
+      </Route>
     </Routes>
   )
 }
