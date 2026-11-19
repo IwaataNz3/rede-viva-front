@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
 import Sobre from './pages/Sobre'
 import Integrantes from './pages/Integrantes'
 import IntegranteDetalhe from './pages/IntegranteDetalhe'
@@ -10,6 +11,7 @@ import Painel from './pages/Painel'
 function App() {
   return (
     <Routes>
+      <Route path="/" element={<Home />} />
       <Route path="/sobre" element={<Sobre />} />
       <Route path="/ofertas" element={<Vitrine />} />
       <Route path="/painel" element={<Painel />} />
