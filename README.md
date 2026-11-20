@@ -85,14 +85,13 @@ A API fica no plano gratuito do Render, que desliga quando passa um tempo sem us
 
 ## Links
 
-- GitHub: LINK_DO_GITHUB
-- Vercel: LINK_DA_VERCEL
+- GitHub: https://github.com/IwaataNz3/rede-viva-front
+- Vercel: https://rede-viva-front.vercel.app/
 - API Java: https://redeviva-api-rest.onrender.com
 - Repositório da API: https://github.com/alencarVictor/redeviva-API-REST
-- Vídeo no YouTube: LINK_DO_YOUTUBE
+- Vídeo no YouTube: https://youtu.be/1juvstXfHyk
 
 ## Contato
 
 - E-mail geral: rm573723@fiap.com.br
 - Suporte técnico: rm574057@fiap.com.br
-- Ou pela página `/contato` do site.
